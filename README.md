@@ -1,16 +1,11 @@
 For this project an up and running **MongoDb** instance and a **Java 8** jre is required.
 
-Usage:
-execute this command: **java -jar cabonline-urlshortener.jar**
-
 Then send a post request to **localhost:8080/makeThisShorter/** with the long url in its body as plain text. The 
 response will be a short url. Hitting the short url cause a redirect to long url.
 
 ###################
 Some Information
 ###################
-Hi
-
 A Url shortener needs a database which is high speed in read operations.
 And overally it needs a architecture supporting large scale of simultaneous requests.
 So I went for a fully reactive stack and Redis as database.
